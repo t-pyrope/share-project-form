@@ -8,23 +8,23 @@ export const SearchInput = () => {
 
     return (
         <FormControl variant="standard">
-            <InputLabel shrink htmlFor={inputId} sx={{ color: 'text.primary' }}>
+            <InputLabel shrink htmlFor={inputId} sx={{color: 'text.primary'}}>
                 Search recipients
             </InputLabel>
-            <Box sx={{ marginTop: '24px', display: 'flex', gap: 1 }}>
+            <Box sx={{marginTop: '24px', display: 'flex', gap: 1}}>
                 <StyledInputBase
                     id={inputId}
                     placeholder={'Search for names or email...'}
                     endAdornment={
-                        <InputAdornment position={"end"} sx={{ position: 'absolute', right: 10 }}>
+                        <InputAdornment position={"end"} sx={{position: 'absolute', right: 10}}>
                             <StyledSelect value={"view"}>
-                                {permissionOptions.map(({ value, label }) => (
+                                {permissionOptions.map(({value, label}) => (
                                     <MenuItem value={value}>{label}</MenuItem>
                                 ))}
                             </StyledSelect>
                         </InputAdornment>
                     }
-                    sx={{ flexGrow: 1, }}
+                    sx={{flexGrow: 1,}}
                 />
                 <Button variant={"contained"}>Share</Button>
             </Box>

@@ -21,44 +21,44 @@ export const Card = () => {
                 Share project
             </Typography>
             <Box
-                sx={{ display: 'flex', flexDirection: 'column', width: '100%', gap: '16px' }}
+                sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: '16px'}}
             >
-                <DocumentLink />
-                <SearchInput />
+                <DocumentLink/>
+                <SearchInput/>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <Box sx={{display: 'flex', flexDirection: 'column', gap: 2}}>
                 <Typography component={'h2'} variant={'body2'}>
                     Recipients
                 </Typography>
-                <List sx={{ paddingTop: 0, paddingBottom: 0 }}>
-                    {recipients.map(({ name, avatar, email, permission }) => (
-                        <Recipient name={name} avatar={avatar} email={email} permission={permission} key={email} />
+                <List sx={{paddingTop: 0, paddingBottom: 0}}>
+                    {recipients.map(({name, avatar, email, permission}) => (
+                        <Recipient name={name} avatar={avatar} email={email} permission={permission} key={email}/>
                     ))}
                 </List>
             </Box>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <Box sx={{display: 'flex', flexDirection: 'column', gap: 2}}>
                 <Typography component={'h2'} variant={'body2'}>
                     Privacy Settings
                 </Typography>
-                <PrivacySettingsActions />
+                <PrivacySettingsActions/>
             </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
                 <Button variant={'contained'}>Done</Button>
                 <Box>
-                    <Button startIcon={<CodeIcon />} sx={{ marginRight: '16px' }}>
-                        <Typography variant={'body2'} sx={{ color: 'text.primary' }}>
+                    <Button startIcon={<CodeIcon/>} sx={{marginRight: '16px'}}>
+                        <Typography variant={'body2'} sx={{color: 'text.primary'}}>
                             Get embed Code
                         </Typography>
                     </Button>
                     <Button
-                        startIcon={<LinkIcon sx={{ transform: 'rotate(-45deg)', fontSize: '16px' }} />}
+                        startIcon={<LinkIcon sx={{transform: 'rotate(-45deg)', fontSize: '16px'}}/>}
                         sx={{
                             '& .MuiButton-startIcon > *:nth-of-type(1)': {
                                 fontSize: '16px',
                             }
                         }}
                     >
-                        <Typography variant={'body2'} sx={{ color: 'text.primary' }}>
+                        <Typography variant={'body2'} sx={{color: 'text.primary'}}>
                             Copy Link
                         </Typography>
                     </Button>

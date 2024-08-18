@@ -1,7 +1,7 @@
 import {Avatar, ListItem, ListItemAvatar, ListItemText, MenuItem, Select, styled, Typography} from "@mui/material";
 import {permissionOptions} from "../../data/permissionOptions.ts";
 
-export const Recipient = ({ name, permission, avatar, email }: {
+export const Recipient = ({name, permission, avatar, email}: {
     name: string,
     permission: 'view' | 'edit' | 'admin',
     avatar: string,
@@ -15,14 +15,14 @@ export const Recipient = ({ name, permission, avatar, email }: {
                     value={permission}
                     disabled={permission === 'admin'}
                 >
-                    {permissionOptions.map(({ value, label }) => (
+                    {permissionOptions.map(({value, label}) => (
                         <MenuItem value={value} key={value}>{label}</MenuItem>
                     ))}
                 </StyledSelect>
             )}
         >
             <ListItemAvatar>
-                <Avatar alt={name} src={avatar} sx={{ width: 48, height: 48 }} />
+                <Avatar alt={name} src={avatar} sx={{width: 48, height: 48}}/>
             </ListItemAvatar>
             <StyledListItemText
                 primary={<Typography variant={'body1'}>{name}</Typography>}
@@ -48,7 +48,7 @@ const StyledListItemText = styled(ListItemText)(() => ({
     justifyContent: 'center',
 }))
 
-const StyledSelect = styled(Select)(({ theme }) => ({
+const StyledSelect = styled(Select)(({theme}) => ({
     '& .MuiSelect-select': {
         padding: '8px 12px',
         color: theme.palette.primary.main,

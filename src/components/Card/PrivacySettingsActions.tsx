@@ -13,7 +13,7 @@ import LinkIcon from '@mui/icons-material/Link';
 
 export const PrivacySettingsActions = () => {
     return (
-        <List sx={{ paddingTop: 0, paddingBottom: 0 }}>
+        <List sx={{paddingTop: 0, paddingBottom: 0}}>
             <StyledListItem
                 secondaryAction={(
                     <StyledSelect
@@ -27,7 +27,7 @@ export const PrivacySettingsActions = () => {
                 )}
             >
                 <StyledListItemAvatar>
-                    <AccountCircleOutlinedIcon />
+                    <AccountCircleOutlinedIcon/>
                 </StyledListItemAvatar>
                 <StyledListItemText
                     primary={(
@@ -39,10 +39,10 @@ export const PrivacySettingsActions = () => {
             </StyledListItem>
 
             <StyledListItem
-                secondaryAction={<Button><Typography variant={'body2'} sx={{ color: 'inherit' }}>Set Password</Typography></Button>}
+                secondaryAction={<Button><Typography variant={'body2'} sx={{color: 'inherit'}}>Set Password</Typography></Button>}
             >
                 <StyledListItemAvatar>
-                    <LinkIcon sx={{ transform: 'rotate(-45deg)' }} />
+                    <LinkIcon sx={{transform: 'rotate(-45deg)'}}/>
                 </StyledListItemAvatar>
                 <StyledListItemText
                     primary={(
@@ -75,7 +75,7 @@ const StyledListItemText = styled(ListItemText)(() => ({
     marginBottom: 0,
 }))
 
-const StyledSelect = styled(Select)(({ theme }) => ({
+const StyledSelect = styled(Select)(({theme}) => ({
     '& .MuiSelect-select': {
         padding: 0,
         border: 0,

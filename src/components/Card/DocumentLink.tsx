@@ -8,7 +8,7 @@ export const DocumentLink = () => {
 
     return (
         <FormControl variant="standard">
-            <InputLabel shrink htmlFor={inputId} sx={{ color: 'text.primary' }}>
+            <InputLabel shrink htmlFor={inputId} sx={{color: 'text.primary'}}>
                 Document Link
             </InputLabel>
             <StyledInputBase
@@ -19,11 +19,13 @@ export const DocumentLink = () => {
                     <InputAdornment position="end">
                         <IconButton
                             aria-label="Copy the link"
-                            onClick={() => {}}
-                            onMouseDown={() => {}}
+                            onClick={() => {
+                            }}
+                            onMouseDown={() => {
+                            }}
                             edge="end"
                         >
-                            <FilterNoneIcon sx={{ transform: 'rotate(180deg)', width: '15px', height: '15px' }} />
+                            <FilterNoneIcon sx={{transform: 'rotate(180deg)', width: '15px', height: '15px'}}/>
                         </IconButton>
                     </InputAdornment>
                 }
