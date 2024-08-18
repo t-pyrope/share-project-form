@@ -46,7 +46,7 @@ export const Card = () => {
                 <Button variant={'contained'}>Done</Button>
                 <Box>
                     <Button startIcon={<CodeIcon />} sx={{ marginRight: '16px' }}>
-                        <Typography variant={'body2'} sx={{ color: '#616161' }}>
+                        <Typography variant={'body2'} sx={{ color: 'text.primary' }}>
                             Get embed Code
                         </Typography>
                     </Button>
@@ -58,7 +58,7 @@ export const Card = () => {
                             }
                         }}
                     >
-                        <Typography variant={'body2'} sx={{ color: '#616161' }}>
+                        <Typography variant={'body2'} sx={{ color: 'text.primary' }}>
                             Copy Link
                         </Typography>
                     </Button>

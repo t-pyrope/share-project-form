@@ -75,11 +75,11 @@ const StyledListItemText = styled(ListItemText)(() => ({
     marginBottom: 0,
 }))
 
-const StyledSelect = styled(Select)(() => ({
+const StyledSelect = styled(Select)(({ theme }) => ({
     '& .MuiSelect-select': {
         padding: 0,
         border: 0,
-        color: '#616161',
+        color: theme.palette.text.primary,
         fontWeight: 700,
     },
     '&.Mui-focused .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-notchedOutline': {
