@@ -25,6 +25,7 @@ a {
     font-weight: inherit;
     color: #1672EC;
     text-decoration: inherit;
+    cursor: pointer;
 }
 
 a:hover {
