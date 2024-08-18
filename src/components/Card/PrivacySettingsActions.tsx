@@ -39,7 +39,7 @@ export const PrivacySettingsActions = () => {
             </StyledListItem>
 
             <StyledListItem
-                secondaryAction={<Button><Typography variant={'body2'} sx={{color: 'inherit'}}>Set Password</Typography></Button>}
+                secondaryAction={<Button><Typography variant={'body2'} sx={{color: 'primary.light'}}>Set Password</Typography></Button>}
             >
                 <StyledListItemAvatar>
                     <LinkIcon sx={{transform: 'rotate(-45deg)'}}/>
